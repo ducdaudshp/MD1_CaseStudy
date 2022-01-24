@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="name">
+<button onclick="findByName()">Tìm theo tên nông sản</button>
+<br>
+<input id="selectOrigin">
+<button onclick="findByOrigin()">Tìm theo xuất xứ</button>
+<br>
+<input id="newProduct" placeholder="Nông sản mới">
+<input id="price" placeholder="Giá nông sản">
+<input id="number" placeholder="Số lượng">
+<input id="origin" placeholder="Xuất xứ">
+<button onclick="createNewProduct()">Thêm mới sản phẩm</button>
+<!--tao moi-->
+<div id="content">
+    <table border="">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <button onclick="getPay">Thanh toán</button>
+</div>
+<script src="quanlynongsan.js"></script>
+</body>
+</html>
