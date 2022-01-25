@@ -3,32 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        div{
+            background-color: antiquewhite;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+        }
+        th{
+            height: 50px;
+            background-color: aquamarine;
+        }
+        .btn_tt{
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+        }
+        .btn_sua{
+            background-color: orange;
+            width: 100%;
+            height: 100%;
+        }
+        .btn_xoa{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+        }
+        .img1{
+            width: 100%;
+            height: 100%;
+        }
+        .td_ha{
+            width: 100px;
+            height: 80px;
+        }
+        .btn_fbn{
+            background-color: darksalmon;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .btn_fbo{
+            background-color: lightskyblue;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        input#name{
+            border-radius: 5px;
+        }
+        input#selectOrigin{
+            border-radius: 5px;
+        }
+        input#newProduct{
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        input#price{
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        input#number{
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        input#origin{
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .btn_cnp{
+            border-radius: 5px;
+            background-color: wheat;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
+
 <input id="name">
-<button onclick="findByName()">Tìm theo tên nông sản</button>
+<button class="btn_fbn" onclick="findByName()">Tìm theo tên nông sản</button>
 <br>
+
 <input id="selectOrigin">
-<button onclick="findByOrigin()">Tìm theo xuất xứ</button>
+<button class="btn_fbo" onclick="findByOrigin()">Tìm theo xuất xứ</button>
 <br>
+
 <input id="newProduct" placeholder="Nông sản mới">
 <input id="price" placeholder="Giá nông sản">
 <input id="number" placeholder="Số lượng">
 <input id="origin" placeholder="Xuất xứ">
-<button onclick="createNewProduct()">Thêm mới sản phẩm</button>
+
+<button class="btn_cnp" onclick="createNewProduct()">Thêm mới sản phẩm</button>
 <!--tao moi-->
 <div id="content">
-    <table border="">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
 </div>
-<div>
-    <button onclick="getPay">Thanh toán</button>
-</div>
+
 <script src="quanlynongsan.js"></script>
 </body>
 </html>
