@@ -68,22 +68,24 @@ function getPay(index) {
     showAllProduct();
 }
 //check trùng name
-function checkName(id) {
-    // for (let i=0;i<products.length;i++){
-    //     if (products[i].name==id){
-    //         return true;
-    //     }
-    // }
+function checkName(name) {
+    for (let i=0;i<products.length;i++){
+        // let check=products[i].name==name
+        if (products[i].name==name){
+            return true;
+        }
+    }
+    return false;
 }
 
-function createNewProduct(id) {
+function createNewProduct() {
     let name = document.getElementById("newProduct").value;
     let price = document.getElementById("price").value;
     let number = document.getElementById("number").value;
     let origin = document.getElementById("origin").value;
     let money = '';
     let newP = new Product(name, price, number, origin, money);
-    if (!checkName(id)){
+    if (!checkName(name)){
         products.push(newP);
         showAllProduct();
     }
@@ -101,8 +103,8 @@ function deleteProduct(index) {
 }
 
 function editProduct(index) {
-    let newPrice = prompt('Nhập lại giá', products[index].price);
-    let newNum = prompt("Nhập lại số lượng", products[index].number);
+    let newPrice = Number(prompt('Nhập lại giá', products[index].price));
+    let newNum = Number(prompt("Nhập lại số lượng", products[index].number));
     products[index].price = newPrice;
     products[index].number = newNum;
     showAllProduct();

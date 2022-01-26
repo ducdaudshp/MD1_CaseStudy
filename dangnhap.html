@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<style>
+    .dn{
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .mk{
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .btn_dn{
+        border-radius: 5px;
+        background-color: yellow;
+        margin: 5px;
+        margin-left: 45px;
+    }
+    .admin{
+        background-color: lightskyblue;
+        width: 180px;
+        height: 100px;
+        border-radius: 10px;
+    }
+</style>
 <body>
-$END$
+<form action="index.html" method="post" onsubmit="return kiemtra()">
+    <div class="admin">
+        <input class="dn" type="text" placeholder="Tài khoản" id="dangnhap"><br>
+        <input class="mk" type="password" placeholder="Mật khẩu" id="matkhau"><br>
+        <button class="btn_dn" type="submit">Đăng nhập</button>
+    </div>
+</form>
+<script src="dangnhap.js"></script>
 </body>
 </html>
